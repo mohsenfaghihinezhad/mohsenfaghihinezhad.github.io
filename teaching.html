@@ -35,19 +35,52 @@
 
     nav {
       background-color: #4b4148;
-      padding: 14px;
       text-align: center;
     }
 
-    nav a {
+    nav a, .dropbtn {
+      display: inline-block;
       color: white;
-      margin: 0 16px;
+      padding: 14px 16px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover, .dropdown:hover .dropbtn {
+      background-color: #18453B;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 260px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: #222;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #18453B;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     main {
@@ -70,51 +103,34 @@
 
     h3 {
       color: #333;
-      margin-top: 24px;
-    }
-
-    h4 {
-      color: #18453B;
       margin-top: 22px;
-      margin-bottom: 8px;
     }
 
     ul {
       padding-left: 24px;
     }
 
-    .tab-menu {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 20px 0;
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
     }
 
-    .tab-menu a {
-      background-color: #18453B;
-      color: white;
-      padding: 10px 14px;
-      border-radius: 3px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.95rem;
-    }
-
-    .tab-menu a:hover {
-      background-color: #0f2f29;
-    }
-
-    .subsection {
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-      margin-top: 28px;
-    }
-
-    .placeholder {
-      background-color: #f3f5f4;
+    .card {
+      background-color: #f7f7f7;
       border-left: 4px solid #18453B;
-      padding: 14px 16px;
-      margin-top: 12px;
+      padding: 16px;
+    }
+
+    .card a {
+      color: #18453B;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -137,6 +153,20 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="teaching.html">Teaching Portfolio</a>
+
+    <div class="dropdown">
+      <span class="dropbtn">Certificate in College Teaching</span>
+      <div class="dropdown-content">
+        <a href="competency1.html">Competency 1</a>
+        <a href="competency2.html">Competency 2</a>
+        <a href="competency3.html">Competency 3</a>
+        <a href="competency4.html">Competency 4</a>
+        <a href="competency5.html">Competency 5</a>
+        <a href="teaching-philosophy.html">Teaching Philosophy Statement</a>
+        <a href="mentored-teaching-project.html">Mentored Teaching Project</a>
+      </div>
+    </div>
+
     <a href="index.html#research">Research</a>
     <a href="index.html#publications">Publications</a>
     <a href="index.html#contact">Contact</a>
@@ -155,157 +185,61 @@
       </p>
     </section>
 
-    <section id="certificate">
+    <section>
       <h2>Certificate in College Teaching</h2>
       <p>
-        This section organizes my materials for the Certificate in College Teaching. Each competency includes a description, relevant experience or coursework, artifacts, rationale, and reflection.
+        This section organizes my materials for the Certificate in College Teaching. Each competency page includes the related experience or coursework, artifacts, rationale, and reflection.
       </p>
 
-      <div class="tab-menu">
-        <a href="#competency1">Competency 1</a>
-        <a href="#competency2">Competency 2</a>
-        <a href="#competency3">Competency 3</a>
-        <a href="#competency4">Competency 4</a>
-        <a href="#competency5">Competency 5</a>
-        <a href="#teaching-philosophy">Teaching Philosophy Statement</a>
-        <a href="#mentored-project">Mentored Teaching Project</a>
-      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Competency 1</h3>
+          <p>Approved course in college teaching: EGR 811 and ENE 280 course redesign project.</p>
+          <a href="competency1.html">View Competency 1</a>
+        </div>
 
-      <div class="subsection" id="competency1">
-        <h3>Competency 1: Approved Course in College Teaching</h3>
+        <div class="card">
+          <h3>Competency 2</h3>
+          <p>Materials will be added as I organize the relevant teaching development work.</p>
+          <a href="competency2.html">View Competency 2</a>
+        </div>
 
-        <h4>Description of Competency</h4>
-        <p>
-          This competency focuses on developing a foundation in college teaching through completion of an approved graduate-level course. For me, this competency was about learning how to think more intentionally about teaching, not only as explaining material, but as designing a full learning experience for students.
-        </p>
+        <div class="card">
+          <h3>Competency 3</h3>
+          <p>Materials will be added as I organize the relevant teaching development work.</p>
+          <a href="competency3.html">View Competency 3</a>
+        </div>
 
-        <p>
-          Through this competency, I learned more about writing learning objectives, aligning lectures with activities and assessments, using active learning strategies, and connecting technical concepts to real-world engineering problems.
-        </p>
+        <div class="card">
+          <h3>Competency 4</h3>
+          <p>Materials will be added as I organize the relevant teaching development work.</p>
+          <a href="competency4.html">View Competency 4</a>
+        </div>
 
-        <h4>Course Taken</h4>
-        <p>
-          <strong>EGR 811: Foundations of Engineering Education</strong><br>
-          Michigan State University<br>
-          Spring 2026
-        </p>
+        <div class="card">
+          <h3>Competency 5</h3>
+          <p>Materials will be added as I organize the relevant teaching development work.</p>
+          <a href="competency5.html">View Competency 5</a>
+        </div>
 
-        <p>
-          In this course, I completed a course redesign project for <strong>ENE 280: Principles of Environmental Engineering and Science</strong>, an introductory undergraduate course in environmental engineering. The project helped me think about how a 200-level course can balance fundamental concepts, technical skills, and modern environmental challenges.
-        </p>
+        <div class="card">
+          <h3>Teaching Philosophy Statement</h3>
+          <p>This section will include my revised teaching philosophy statement.</p>
+          <a href="teaching-philosophy.html">View Teaching Philosophy</a>
+        </div>
 
-        <h4>Artifacts and Materials Developed</h4>
-        <p>
-          As part of this competency, I developed several teaching materials for ENE 280, including:
-        </p>
-
-        <ul>
-          <li>Redesigned syllabus and 15-week course plan</li>
-          <li>Focus week on emerging contaminants, advanced oxidation processes, and biologically mediated remediation</li>
-          <li>Lecture material for <em>Lecture 28: Emerging Contaminants</em></li>
-          <li>In-class activity: <em>Selecting Treatment Strategies for Emerging Contaminants</em></li>
-          <li>Homework assignment and grading rubric on emerging contaminants</li>
-          <li>Final project report and presentation</li>
-        </ul>
-
-        <h4>Artifact Rationales</h4>
-        <p>
-          I selected these artifacts because they show how I applied the ideas from EGR 811 to an actual course design project. The syllabus and course plan show the overall structure of the course and how I tried to balance traditional environmental engineering topics with newer and more applied topics.
-        </p>
-
-        <p>
-          One of my main thoughts during the redesign was that environmental engineering is a very broad field. It includes water and wastewater treatment, soil pollution, air pollution, waste management, water resources, and remediation. Because of that, I wanted the course to expose students to the breadth of the field while still keeping the technical foundation.
-        </p>
-
-        <p>
-          I also felt that for a 200-level introductory course, some topics should not become too calculation-heavy too early. My goal was not to remove technical rigor, but to make the course more balanced and better connected to why environmental engineering matters.
-        </p>
-
-        <p>
-          The in-class activity and homework rubric show my effort to align learning objectives, class activities, and assessment. Students evaluate contaminants, think about their properties, select treatment methods, and justify their choices using engineering reasoning.
-        </p>
-
-        <h4>Interpretation</h4>
-        <p>
-          EGR 811 changed the way I think about teaching. Before this course, I mostly thought about teaching as explaining the material clearly. I still think clear explanation is very important, but now I see that good teaching also requires careful planning before class starts.
-        </p>
-
-        <p>
-          One of the most important things I learned was the importance of alignment. If I want students to apply engineering judgment, then I need to give them activities and assignments where they actually practice that skill. This was one reason I designed the treatment-selection activity and the homework rubric around contaminant properties, treatment limitations, and engineering justification.
-        </p>
-
-        <p>
-          Overall, this competency helped me develop a more structured and intentional approach to teaching. It also helped me see the kind of instructor I want to become: someone who teaches technical concepts clearly, connects them to real environmental problems, and creates opportunities for students to actively engage with the material.
-        </p>
-      </div>
-
-      <div class="subsection" id="competency2">
-        <h3>Competency 2</h3>
-        <div class="placeholder">
-          <p>
-            Materials for this competency will be added after I organize the relevant workshop, reflection, or teaching-development artifact.
-          </p>
+        <div class="card">
+          <h3>Mentored Teaching Project</h3>
+          <p>This section will include my mentored teaching project, project goals, evidence, and reflection.</p>
+          <a href="mentored-teaching-project.html">View Mentored Teaching Project</a>
         </div>
       </div>
-
-      <div class="subsection" id="competency3">
-        <h3>Competency 3</h3>
-        <div class="placeholder">
-          <p>
-            Materials for this competency will be added after I organize the relevant workshop, reflection, or teaching-development artifact.
-          </p>
-        </div>
-      </div>
-
-      <div class="subsection" id="competency4">
-        <h3>Competency 4</h3>
-        <div class="placeholder">
-          <p>
-            Materials for this competency will be added after I organize the relevant workshop, reflection, or teaching-development artifact.
-          </p>
-        </div>
-      </div>
-
-      <div class="subsection" id="competency5">
-        <h3>Competency 5</h3>
-        <div class="placeholder">
-          <p>
-            Materials for this competency will be added after I organize the relevant workshop, reflection, or teaching-development artifact.
-          </p>
-        </div>
-      </div>
-
-      <div class="subsection" id="teaching-philosophy">
-        <h3>Teaching Philosophy Statement</h3>
-        <div class="placeholder">
-          <p>
-            My teaching philosophy statement will be added here after final revision. This section will describe my approach to student learning, inclusive teaching, active learning, assessment, and connecting environmental engineering concepts to real-world problems.
-          </p>
-        </div>
-      </div>
-
-      <div class="subsection" id="mentored-project">
-        <h3>Mentored Teaching Project</h3>
-        <div class="placeholder">
-          <p>
-            My mentored teaching project will be added here after the project is finalized. This section will include the project context, teaching goals, methods, evidence of student learning, and reflection.
-          </p>
-        </div>
-      </div>
-
     </section>
 
     <section>
       <h2>Teaching Experience</h2>
       <p>
         I have served as a Graduate Teaching Assistant for ENE 381: Environmental Chemistry at Michigan State University. I also previously served as a Teaching Assistant for a water and wastewater laboratory course at the University of Tehran.
-      </p>
-    </section>
-
-    <section>
-      <h2>COLA Program Connection</h2>
-      <p>
-        This teaching portfolio also supports my work in the COLA program. It organizes my teaching-related materials, reflections, and deliverables in one place and allows me to continue revising them based on feedback from my cohort and mentor.
       </p>
     </section>
 
