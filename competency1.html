@@ -35,19 +35,52 @@
 
     nav {
       background-color: #4b4148;
-      padding: 14px;
       text-align: center;
     }
 
-    nav a {
+    nav a, .dropbtn {
+      display: inline-block;
       color: white;
-      margin: 0 16px;
+      padding: 14px 16px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover, .dropdown:hover .dropbtn {
+      background-color: #18453B;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 280px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: #222;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #18453B;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     main {
@@ -59,13 +92,18 @@
     section {
       background-color: white;
       margin-bottom: 28px;
-      padding: 22px 28px;
-      border-radius: 2px;
+      padding: 24px 30px;
+      border-radius: 3px;
     }
 
     h2 {
       color: #18453B;
       margin-top: 0;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 24px;
     }
 
     ul {
@@ -86,13 +124,25 @@
   <header>
     <h1>Competency 1</h1>
     <p>Approved Course in College Teaching</p>
-    <p>Certification in College Teaching</p>
+    <p>Certificate in College Teaching</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="teaching.html">Teaching Portfolio</a>
 
+    <div class="dropdown">
+      <span class="dropbtn">Certificate in College Teaching</span>
+      <div class="dropdown-content">
+        <a href="competency1.html">Competency 1</a>
+        <a href="competency2.html">Competency 2</a>
+        <a href="competency3.html">Competency 3</a>
+        <a href="competency4.html">Competency 4</a>
+        <a href="competency5.html">Competency 5</a>
+        <a href="teaching-philosophy.html">Teaching Philosophy Statement</a>
+        <a href="mentored-teaching-project.html">Mentored Teaching Project</a>
+      </div>
+    </div>
   </nav>
 
   <main>
@@ -152,6 +202,10 @@
       </p>
 
       <p>
+        The focus week on emerging contaminants, advanced oxidation processes, and biologically mediated remediation was one way to bring modern topics into the course. These topics help students see how environmental engineers respond to current challenges such as PFAS, pharmaceuticals, microplastics, and chlorinated solvents.
+      </p>
+
+      <p>
         The in-class activity and homework rubric show my effort to align learning objectives, class activities, and assessment. Students evaluate contaminants, think about their properties, select treatment methods, and justify their choices using engineering reasoning.
       </p>
     </section>
@@ -164,6 +218,10 @@
 
       <p>
         One of the most important things I learned was the importance of alignment. If I want students to apply engineering judgment, then I need to give them activities and assignments where they actually practice that skill. This was one reason I designed the treatment-selection activity and the homework rubric around contaminant properties, treatment limitations, and engineering justification.
+      </p>
+
+      <p>
+        I also learned that student motivation matters. In environmental engineering, many topics can feel abstract if they are only presented as equations or process diagrams. Connecting the material to real-world problems, such as emerging contaminants in wastewater and groundwater, can create more curiosity and help students understand why the topic is important.
       </p>
 
       <p>
