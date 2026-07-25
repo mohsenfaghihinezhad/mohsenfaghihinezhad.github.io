@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,24 +73,37 @@
     .about-container {
       display: flex;
       align-items: flex-start;
-      gap: 28px;
+      gap: 32px;
       flex-wrap: wrap;
-    }
-
-    .profile-photo {
-      width: 170px;
-      height: 220px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 8px;
-      border: 3px solid #18453B;
-      flex-shrink: 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
 
     .about-text {
       flex: 1;
-      min-width: 260px;
+      min-width: 300px;
+    }
+
+    .profile-photo-wrapper {
+      width: 190px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 235px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      border: 3px solid #18453B;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      display: block;
+    }
+
+    .photo-caption {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 8px;
+      line-height: 1.4;
     }
 
     .contact a {
@@ -112,13 +124,18 @@
         align-items: center;
       }
 
+      .profile-photo-wrapper {
+        width: 170px;
+      }
+
       .profile-photo {
-        width: 160px;
-        height: 200px;
+        width: 170px;
+        height: 210px;
       }
 
       .about-text {
         width: 100%;
+        min-width: 0;
       }
     }
   </style>
@@ -149,8 +166,6 @@
       <h2>About</h2>
 
       <div class="about-container">
-        <img src="profile.jpg" alt="Mohsen Faghihinezhad" class="profile-photo">
-
         <div class="about-text">
           <p>
             I am a Ph.D. student in Environmental Engineering at Michigan State University, where I work as a Graduate Research Assistant and have also served as a Graduate Teaching Assistant. My research focuses on biological and chemical approaches for water, wastewater, and groundwater remediation.
@@ -159,6 +174,11 @@
           <p>
             My current research investigates cometabolic biodegradation of chlorinated ethenes and 1,4-dioxane by methane- and propane-oxidizing microbial communities. I am broadly interested in developing sustainable and effective treatment strategies for environmental contaminants.
           </p>
+        </div>
+
+        <div class="profile-photo-wrapper">
+          <img src="profile.jpg" alt="Mohsen Faghihinezhad" class="profile-photo">
+          <p class="photo-caption">Mohsen Faghihinezhad</p>
         </div>
       </div>
     </section>
@@ -181,19 +201,19 @@
       <h2>Selected Publications</h2>
       <ul>
         <li>
-          Faghihinezhad, M., Eshghdoostkhatami, Z., & Cupples, A. M. (2026).
+          Faghihinezhad, M., Eshghdoostkhatami, Z., &amp; Cupples, A. M. (2026).
           Characterization of multiple trichloroethene, cis-dichloroethene and 1,1-dichloroethene degrading propanotrophic communities.
           <em>Journal of Environmental Management</em>, 408, 129957.
         </li>
 
         <li>
-          Faghihinezhad, M., Eshghdoostkhatami, Z., Bernstein, A., & Cupples, A. M. (2025).
+          Faghihinezhad, M., Eshghdoostkhatami, Z., Bernstein, A., &amp; Cupples, A. M. (2025).
           Identification of the dominant methanotrophs in trichloroethene degrading enrichment cultures from multiple sources.
           <em>Journal of Hazardous Materials</em>, 499, 140268.
         </li>
 
         <li>
-          Faghihinezhad, M., Baghdadi, M., Shahin, M. S., & Torabian, A. (2022).
+          Faghihinezhad, M., Baghdadi, M., Shahin, M. S., &amp; Torabian, A. (2022).
           Catalytic ozonation of real textile wastewater by magnetic oxidized g-C<sub>3</sub>N<sub>4</sub> modified with Al<sub>2</sub>O<sub>3</sub> nanoparticles as a novel catalyst.
           <em>Separation and Purification Technology</em>, 283, 120208.
         </li>
@@ -236,7 +256,7 @@
     <section id="contact" class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:faghihi@msu.edu">faghihi@msu.edu</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=5G3TKeIAAAAJ" target="_blank">Google Scholar Profile</a></p>
+      <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&amp;user=5G3TKeIAAAAJ" target="_blank">Google Scholar Profile</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/mohsen-faghihinezhad-0210ba193" target="_blank">LinkedIn Profile</a></p>
     </section>
 
@@ -248,4 +268,3 @@
 
 </body>
 </html>
-
