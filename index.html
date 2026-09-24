@@ -32,6 +32,39 @@
       font-size: 1.1rem;
     }
 
+
+    .research-tagline {
+      max-width: 760px;
+      margin: 14px auto 0;
+      color: #edf4f1;
+      font-size: 1rem;
+    }
+
+    .header-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .header-links a {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.75);
+      border-radius: 4px;
+      color: white;
+      font-size: 0.92rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header-links a:hover,
+    .header-links a:focus-visible {
+      color: #18453B;
+      background-color: white;
+    }
+
     nav {
       background-color: #222;
       padding: 12px;
@@ -88,16 +121,16 @@
       text-align: center;
     }
 
- .profile-photo {
-  width: 190px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center 35%;
-  border-radius: 8px;
-  border: 3px solid #18453B;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-  display: block;
-}
+    .profile-photo {
+      width: 190px;
+      height: 300px;
+      object-fit: cover;
+      object-position: center 35%;
+      border-radius: 8px;
+      border: 3px solid #18453B;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      display: block;
+    }
 
     .photo-caption {
       font-size: 0.85rem;
@@ -145,9 +178,15 @@
 
   <header>
     <h1>Mohsen Faghihinezhad</h1>
-    <p>Ph.D. Student in Environmental Engineering</p>
-    <p>Graduate Research Assistant | Graduate Teaching Assistant</p>
-    <p>Michigan State University</p>
+    <p>Ph.D. Student in Environmental Engineering | Michigan State University</p>
+    <p>Graduate Research Assistant &amp; Graduate Teaching Assistant</p>
+    <p>Expected Ph.D. completion: Summer 2027</p>
+    <p class="research-tagline">Environmental microbiology &bull; Contaminant biodegradation &bull; Water and wastewater treatment</p>
+    <div class="header-links">
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=5G3TKeIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://orcid.org/0000-0001-7180-3503" target="_blank" rel="noopener noreferrer">ORCID</a>
+      <a href="mailto:faghihi@msu.edu">Email</a>
+    </div>
   </header>
 
   <nav>
@@ -168,18 +207,17 @@
       <div class="about-container">
         <div class="about-text">
           <p>
-            I am a Ph.D. student in Environmental Engineering at Michigan State University, where I work as a Graduate Research Assistant and have also served as a Graduate Teaching Assistant. My research focuses on biological and chemical approaches for water, wastewater, and groundwater remediation.
+            I am a Ph.D. student in Environmental Engineering at Michigan State University, working with Professor Alison M. Cupples. My research investigates how methane- and propane-oxidizing microbial communities transform chlorinated ethenes and 1,4-dioxane. I combine biodegradation experiments, quantitative PCR, sequencing-based microbial community analysis, and genome-resolved metagenomics to study the microorganisms and functional genes involved in contaminant transformation.
           </p>
 
           <p>
-            My current research investigates cometabolic biodegradation of chlorinated ethenes and 1,4-dioxane by methane- and propane-oxidizing microbial communities. I am broadly interested in developing sustainable and effective treatment strategies for environmental contaminants.
+            Previously, at the University of Tehran, I studied catalytic ozonation and adsorption for water and wastewater treatment. Building on this biological and physicochemical research experience, I am interested in developing integrated treatment approaches for contaminants of emerging concern, with an emphasis on practical water remediation solutions.
           </p>
         </div>
 
         <div class="profile-photo-wrapper">
           <img src="profile.jpg.JPG" alt="Mohsen Faghihinezhad" class="profile-photo">
-          <p class="photo-caption">Mohsen Faghihinezhad</p>
-        </div>
+            </div>
       </div>
     </section>
 
