@@ -139,6 +139,81 @@
       line-height: 1.4;
     }
 
+
+    /* Research section */
+    .research-intro {
+      max-width: 850px;
+      margin-top: 0;
+      color: #303b36;
+      font-size: 1.04rem;
+    }
+
+    .research-label {
+      margin: 28px 0 12px;
+      font-size: 1.18rem;
+      color: #18453B;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+
+    .research-card {
+      background-color: #f3f7f5;
+      border-left: 4px solid #18453B;
+      border-radius: 4px;
+      padding: 18px;
+    }
+
+    .research-card h4 {
+      font-size: 1.04rem;
+      color: #18453B;
+      margin: 0 0 8px;
+    }
+
+    .research-card p {
+      margin: 0;
+      font-size: 0.96rem;
+    }
+
+    .research-skills {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .research-skills li {
+      margin: 6px 0;
+    }
+
+    .research-next {
+      margin-top: 25px;
+      padding: 18px 20px;
+      border: 1px solid #c9ded3;
+      background: #f7faf8;
+      border-radius: 4px;
+    }
+
+    .research-next h3 {
+      margin: 0 0 8px;
+      color: #18453B;
+    }
+
+    .research-next p {
+      margin: 0;
+    }
+
+    .research-more {
+      margin: 18px 0 0;
+      font-size: 0.95rem;
+    }
+
+    .research-more a {
+      color: #18453B;
+      font-weight: bold;
+    }
+
     .contact a {
       color: #18453B;
       font-weight: bold;
@@ -222,17 +297,51 @@
     </section>
 
     <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Bioremediation of environmental contaminants</li>
-        <li>Cometabolic biodegradation of chlorinated solvents</li>
-        <li>Methanotrophic and propanotrophic microbial communities</li>
-        <li>Environmental microbiology</li>
-        <li>Functional genes involved in contaminant biodegradation</li>
-        <li>Contaminants of emerging concern</li>
-        <li>Advanced oxidation processes, including catalytic ozonation, photocatalysis, and UV-H<sub>2</sub>O<sub>2</sub></li>
-        <li>Adsorption processes for water and wastewater treatment</li>
+      <h2>Research</h2>
+      <p class="research-intro">
+        My research examines how microorganisms and treatment processes can be used to transform contaminants in water, wastewater, and groundwater. At Michigan State University, I study aerobic cometabolism in methane- and propane-oxidizing microbial communities. My earlier work in catalytic ozonation and adsorption provides a complementary physicochemical perspective on contaminant removal.
+      </p>
+
+      <h3 class="research-label">Research Themes</h3>
+      <div class="research-grid">
+        <article class="research-card">
+          <h4>Aerobic Cometabolism and Biodegradation</h4>
+          <p>
+            I develop and characterize methanotrophic and propanotrophic enrichment cultures to investigate the biodegradation of chlorinated ethenes and 1,4-dioxane, including the relationships between contaminant transformation and growth substrates.
+          </p>
+        </article>
+
+        <article class="research-card">
+          <h4>Functional Microbiomes and Genes</h4>
+          <p>
+            I use molecular and sequencing-based methods to examine microbial communities and functional genes associated with contaminant transformation. Genome-resolved metagenomic analysis helps me investigate metagenome-assembled genomes and monooxygenase operons.
+          </p>
+        </article>
+
+        <article class="research-card">
+          <h4>Biological and Physicochemical Treatment</h4>
+          <p>
+            My previous research on catalytic ozonation and adsorption complements my Ph.D. work in bioremediation. I am interested in how biological and physicochemical processes can be combined to improve treatment of persistent and emerging contaminants.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="research-label">Research Methods and Technical Expertise</h3>
+      <ul class="research-skills">
+        <li><strong>Experimental:</strong> Microbial enrichment cultures, batch biodegradation experiments, substrate-utilization studies, and water and wastewater treatment experiments.</li>
+        <li><strong>Molecular:</strong> Quantitative PCR (qPCR), sequencing-based microbial community characterization, and functional gene analysis.</li>
+        <li><strong>Computational:</strong> Genome-resolved metagenomics, metagenome-assembled genome (MAG) analysis, monooxygenase operon analysis, and KBase.</li>
+        <li><strong>Treatment processes:</strong> Aerobic bioremediation, catalytic ozonation, and adsorption.</li>
       </ul>
+
+      <div class="research-next">
+        <h3>Postdoctoral Research Interests</h3>
+        <p>
+          I am interested in developing integrated biological and physicochemical approaches for contaminants of emerging concern. In future research, I hope to investigate microbial transformation and treatment combinations for compounds such as pharmaceuticals and selected PFAS precursors, while using molecular tools to examine the microorganisms and genes associated with transformation. These are prospective research directions, building on my previous work in biodegradation and advanced treatment.
+        </p>
+      </div>
+
+      <p class="research-more">For examples of this work, see my <a href="#publications">selected publications</a> below.</p>
     </section>
 
     <section id="publications">
