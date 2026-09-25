@@ -214,6 +214,79 @@
       font-weight: bold;
     }
 
+
+    /* Publications and presentations */
+    .publication-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .publication-item {
+      padding: 18px 20px;
+      border: 1px solid #d9e5df;
+      border-left: 4px solid #18453B;
+      border-radius: 4px;
+      background-color: #fbfdfc;
+    }
+
+    .publication-item p {
+      margin: 0 0 8px;
+    }
+
+    .publication-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .publication-tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 3px;
+      background-color: #e7f0ec;
+      color: #18453B;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .publication-title {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .publication-links a {
+      color: #18453B;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 14px;
+    }
+
+    .publication-links a:hover {
+      text-decoration: underline;
+    }
+
+    .presentation-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .presentation-item {
+      padding: 16px 18px;
+      background-color: #f7f9f8;
+      border-radius: 4px;
+      border: 1px solid #e0e6e3;
+    }
+
+    .presentation-item p {
+      margin: 0;
+    }
+
+    .presentation-type {
+      color: #18453B;
+      font-weight: bold;
+    }
+
     .contact a {
       color: #18453B;
       font-weight: bold;
@@ -268,6 +341,7 @@
     <a href="#about">About</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
+    <a href="#presentations">Presentations</a>
     <a href="teaching.html">Teaching Portfolio</a>
     <a href="#awards">Awards</a>
     <a href="#service">Service</a>
@@ -346,31 +420,77 @@
 
     <section id="publications">
       <h2>Selected Publications</h2>
-      <ul>
-        <li>
-          Faghihinezhad, M., Eshghdoostkhatami, Z., &amp; Cupples, A. M. (2026).
-          Characterization of multiple trichloroethene, cis-dichloroethene and 1,1-dichloroethene degrading propanotrophic communities.
-          <em>Journal of Environmental Management</em>, 408, 129957.
-        </li>
+      <p>Selected peer-reviewed work spanning microbial contaminant transformation, advanced treatment, and water reuse.</p>
 
-        <li>
-          Faghihinezhad, M., Eshghdoostkhatami, Z., Bernstein, A., &amp; Cupples, A. M. (2025).
-          Identification of the dominant methanotrophs in trichloroethene degrading enrichment cultures from multiple sources.
-          <em>Journal of Hazardous Materials</em>, 499, 140268.
-        </li>
+      <div class="publication-list">
+        <article class="publication-item">
+          <span class="publication-tag">First author · Ph.D. research</span>
+          <p class="publication-title">Characterization of multiple trichloroethene, cis-dichloroethene and 1,1-dichloroethene degrading propanotrophic communities</p>
+          <p><strong>M. Faghihinezhad</strong>, Z. Eshghdoostkhatami, A. M. Cupples. <em>Journal of Environmental Management</em>, 408 (2026), 129957.</p>
+          <p class="publication-links"><a href="https://doi.org/10.1016/J.JENVMAN.2026.129957" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
 
-        <li>
-          Faghihinezhad, M., Baghdadi, M., Shahin, M. S., &amp; Torabian, A. (2022).
-          Catalytic ozonation of real textile wastewater by magnetic oxidized g-C<sub>3</sub>N<sub>4</sub> modified with Al<sub>2</sub>O<sub>3</sub> nanoparticles as a novel catalyst.
-          <em>Separation and Purification Technology</em>, 283, 120208.
-        </li>
+        <article class="publication-item">
+          <span class="publication-tag">First author · Ph.D. research</span>
+          <p class="publication-title">Identification of the dominant methanotrophs in trichloroethene degrading enrichment cultures from multiple sources</p>
+          <p><strong>M. Faghihinezhad</strong>, Z. Eshghdoostkhatami, A. Bernstein, A. M. Cupples. <em>Journal of Hazardous Materials</em>, 499 (2025), 140268.</p>
+          <p class="publication-links"><a href="https://doi.org/10.1016/J.JHAZMAT.2025.140268" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
 
-        <li>
-          Faghihinezhad, M. (2025).
-          Reclaimed wastewater in the food industry: Sources, treatment, and reuse.
-          In <em>Wastewater and Sludge Treatment for Reuse</em>. Springer.
-        </li>
-      </ul>
+        <article class="publication-item">
+          <span class="publication-tag">Collaborative Ph.D. research</span>
+          <p class="publication-title">Characterization of propanotrophic enrichments from agricultural soils capable of 1,4-dioxane biodegradation to sub-&micro;g/L levels</p>
+          <p>Z. Eshghdoostkhatami, Z. Li, <strong>M. Faghihinezhad</strong>, A. M. Cupples. <em>Science of the Total Environment</em>, 1005 (2025), 180824.</p>
+          <p class="publication-links"><a href="https://doi.org/10.1016/J.SCITOTENV.2025.180824" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+
+        <article class="publication-item">
+          <span class="publication-tag">First author · M.Sc. research</span>
+          <p class="publication-title">Catalytic ozonation of real textile wastewater by magnetic oxidized g-C<sub>3</sub>N<sub>4</sub> modified with Al<sub>2</sub>O<sub>3</sub> nanoparticles as a novel catalyst</p>
+          <p><strong>M. Faghihinezhad</strong>, M. Baghdadi, M. S. Shahin, A. Torabian. <em>Separation and Purification Technology</em>, 283 (2022), 120208.</p>
+          <p class="publication-links"><a href="https://doi.org/10.1016/J.SEPPUR.2021.120208" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+
+        <article class="publication-item">
+          <span class="publication-tag">Book chapter</span>
+          <p class="publication-title">Reclaimed wastewater in the food industry: Sources, treatment, and reuse</p>
+          <p><strong>M. Faghihinezhad</strong>. In <em>Wastewater and Sludge Treatment for Reuse</em>. Springer, 2025.</p>
+          <p class="publication-links"><a href="https://doi.org/10.1007/698_2025_1249" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+      </div>
+
+      <p class="research-more">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=5G3TKeIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar profile</a> for the full publication record.</p>
+    </section>
+
+    <section id="presentations">
+      <h2>Selected Research Presentations</h2>
+      <p>Recent presentations highlighting my work on contaminant biodegradation and functional microbial communities.</p>
+
+      <div class="presentation-list">
+        <article class="presentation-item">
+          <p><span class="presentation-type">Poster presentation · 2026</span><br>
+          <strong>Characterization of Trichloroethene, cis-Dichloroethene, 1,1-Dichloroethene and 1,4-Dioxane Degrading Propanotrophic Enrichment Cultures</strong><br>
+          2026 Chlorinated Conference (Battelle), Fort Worth, Texas.</p>
+        </article>
+
+        <article class="presentation-item">
+          <p><span class="presentation-type">Poster presentation · 2026</span><br>
+          <strong>Propanotrophic Enrichment Cultures Capable of the Biodegradation of Multiple Groundwater Contaminants</strong><br>
+          2026 Borchardt Conference, University of Michigan, Ann Arbor, Michigan.</p>
+        </article>
+
+        <article class="presentation-item">
+          <p><span class="presentation-type">Poster presentation · 2026</span><br>
+          <strong>Propanotrophic Enrichment Cultures Expressing Propane Monooxygenase for the Cometabolic Biodegradation of Common Groundwater Contaminants</strong><br>
+          CEE 2026 Symposium, Michigan State University, East Lansing, Michigan.</p>
+        </article>
+
+        <article class="presentation-item">
+          <p><span class="presentation-type">Platform presentation · 2025</span><br>
+          <strong>Examining the Diversity of Methane Monooxygenases and Methanotrophs in Trichloroethene Degrading Cultures</strong><br>
+          Seventh International Symposium on Bioremediation and Environmental Biotechnology (Battelle), Boston, Massachusetts.</p>
+        </article>
+      </div>
     </section>
 
     <section id="teaching">
