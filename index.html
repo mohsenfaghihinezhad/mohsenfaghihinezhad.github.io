@@ -287,6 +287,67 @@
       font-weight: bold;
     }
 
+    /* Teaching and professional development */
+    .teaching-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .teaching-card {
+      padding: 18px;
+      border: 1px solid #d9e5df;
+      border-left: 4px solid #18453B;
+      border-radius: 4px;
+      background-color: #fbfdfc;
+    }
+
+    .teaching-card h3 {
+      margin: 0 0 6px;
+      color: #18453B;
+      font-size: 1.04rem;
+    }
+
+    .teaching-card p {
+      margin: 0;
+      font-size: 0.96rem;
+    }
+
+    .teaching-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: #18453B;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .teaching-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Honors */
+    .honor-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .honor-item {
+      padding: 16px 18px;
+      background-color: #f7f9f8;
+      border: 1px solid #e0e6e3;
+      border-radius: 4px;
+    }
+
+    .honor-item strong {
+      color: #18453B;
+    }
+
+    .honor-item p {
+      margin: 4px 0 0;
+    }
+
     .contact a {
       color: #18453B;
       font-weight: bold;
@@ -494,20 +555,54 @@
     </section>
 
     <section id="teaching">
-      <h2>Teaching</h2>
+      <h2>Teaching &amp; Professional Development</h2>
       <p>
-        I have served as a Graduate Teaching Assistant for ENE 381: Environmental Chemistry at Michigan State University. My teaching interests include environmental engineering, environmental chemistry, water and wastewater treatment, emerging contaminants, and inclusive engineering education.
+        Alongside my research, I have developed experience in undergraduate engineering instruction and evidence-based teaching. My teaching emphasizes clear explanation, active learning, inclusive participation, and connecting engineering fundamentals to real environmental problems.
       </p>
+
+      <div class="teaching-grid">
+        <article class="teaching-card">
+          <h3>ENV/ENE 380</h3>
+          <p><strong>Graduate Teaching Assistant, 2026–Present</strong><br>
+          Support course instruction, grading, problem-solving activities, and student learning in Principles of Environmental Engineering and Science.</p>
+        </article>
+
+        <article class="teaching-card">
+          <h3>ENE 381</h3>
+          <p><strong>Graduate Teaching Assistant, 2025–2026</strong><br>
+          Assisted with instruction, grading, and student support in Environmental Chemistry.</p>
+        </article>
+
+        <article class="teaching-card">
+          <h3>Certificate in College Teaching</h3>
+          <p><strong>Michigan State University · In progress</strong><br>
+          Developing a teaching portfolio focused on course design, assessment, inclusive teaching, educational technology, and reflective practice.</p>
+        </article>
+
+        <article class="teaching-card">
+          <h3>COLA Fellow</h3>
+          <p><strong>Michigan State University · 2026</strong><br>
+          Professional development in student engagement, inclusive pedagogy, online learning, and responsible use of generative AI in teaching.</p>
+        </article>
+      </div>
+
+      <a class="teaching-link" href="teaching.html">View Teaching Portfolio &rarr;</a>
     </section>
 
     <section id="awards">
-      <h2>Honors and Awards</h2>
-      <ul>
-        <li>Kellogg Biological Station (KBS)–LTER Graduate Fellowship, Michigan State University, 2025</li>
-        <li>Graduate Research Assistantship, Michigan State University, 2022–2026</li>
-        <li>Elsevier Recognized Reviewer Certificate, 2021 and 2024</li>
-        <li>Ranked 704 among approximately 40,000 participants in the Iranian Master’s entrance exam, 2018</li>
-      </ul>
+      <h2>Selected Honors and Recognition</h2>
+
+      <div class="honor-list">
+        <article class="honor-item">
+          <strong>Kellogg Biological Station Long-Term Ecological Research (KBS LTER) Graduate Fellowship · 2025</strong>
+          <p>Michigan State University. Awarded for research excellence in microbial ecology and contaminant biodegradation within agricultural and natural ecosystems.</p>
+        </article>
+
+        <article class="honor-item">
+          <strong>Elsevier Recognized Reviewer Certificates · 2021 and 2024</strong>
+          <p>Recognition for peer-review contributions to scholarly publishing.</p>
+        </article>
+      </div>
     </section>
 
     <section id="service">
@@ -523,8 +618,9 @@
     <section id="contact" class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:faghihi@msu.edu">faghihi@msu.edu</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&amp;user=5G3TKeIAAAAJ" target="_blank">Google Scholar Profile</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mohsen-faghihinezhad-0210ba193" target="_blank">LinkedIn Profile</a></p>
+      <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&amp;user=5G3TKeIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a></p>
+      <p>ORCID: <a href="https://orcid.org/0000-0001-7180-3503" target="_blank" rel="noopener noreferrer">0000-0001-7180-3503</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mohsen-faghihinezhad-0210ba193" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
     </section>
 
   </main>
